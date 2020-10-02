@@ -11,7 +11,8 @@
 |  |```index(e)```              |Index of the first occurence of *e*|
 |  |```insert(e, p)```          |Insert element *e* before item at position *p*|
 |  |```reverse()```             |Reverse all items|
-|  |```sort([key], [reverse])```|Sort items in place with *key* and in *reverse* order|
+|  |```sort([key], [reverse])```|Sort items in place with *key* and in *reverse*
+ order|
 
 This collection is implemented using the array. Increase factor is 2. Sorting
 is implemented using Timsort algorithm.
