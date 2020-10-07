@@ -344,7 +344,6 @@ def test_delete_at_ShouldRemoveMiddleItem():
 
     # act
     sut.delete_at(2)
-    print(sut)
 
     # assert
     assert sut.head.value == 1
