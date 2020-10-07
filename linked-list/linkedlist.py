@@ -82,6 +82,14 @@ class LinkedList:
             output += f" -> {str(node.value)}"
         return output
 
+    def __len__(self):
+        """Length of the list.
+
+        Returns:
+          Number of items in list.
+        """
+        return self._length
+
     def add_last(self, value):
         """Inserts new node at the end of the list
 
@@ -231,3 +239,4 @@ class LinkedList:
                 self._length -= 1
                 return value
             node = node.next
+            index += 1

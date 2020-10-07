@@ -46,6 +46,17 @@ def test_LinkedList_ShouldCreateEmptyInstance():
     sut.head = None
     sut._length = 0
 
+def test_len_ShouldReturnCorrectLength():
+    # arrange
+    sut = LinkedList()
+    sut.add_last(1)
+
+    # act
+    length = len(sut)
+
+    # assert
+    assert length == 1
+
 def test_LinkedList_firstShouldInsertFirst():
     # arrange
     items = ["a", 1, None, True]
@@ -142,6 +153,14 @@ def test_add_at_ShouldInsertSingleElement():
     assert sut.head.next== None
     assert sut.tail.value == 1
     assert sut._length == 1
+
+def test_add_at_ShouldRaiseForInvalidIndex():
+    # arrage
+    sut = LinkedList()
+
+    # act, assert
+    with pytest.raises(IndexError):
+        sut.add_at(1, 1)
 
 def test_LinkedList_firstSouldReturNoneIfEmpty():
     # arrange
@@ -321,15 +340,18 @@ def test_delete_at_ShouldRemoveMiddleItem():
     sut.add_last(1)
     sut.add_last(2)
     sut.add_last(3)
+    sut.add_last(4)
 
     # act
-    sut.delete_at(1)
+    sut.delete_at(2)
+    print(sut)
 
     # assert
     assert sut.head.value == 1
-    assert sut.head.next.value == 3
-    assert sut.tail.value == 3
-    assert sut._length == 2
+    assert sut.head.next.value == 2
+    assert sut.head.next.next.value == 4
+    assert sut.tail.value == 4
+    assert sut._length == 3
 
 def test_str_ShouldPrintTheList():
     # arrage
