@@ -8,7 +8,7 @@ doubly linked.
 | Name              | Status    |
 |-------------------|-----------|
 |Remove Dups        |TODO       |
-|Delete Middle Node |TODO       |
+|Delete Middle Node |DONE       |
 |Partition          |TODO       |
 |Sum Lists          |TODO       |
 |Palindrome         |TODO       |
