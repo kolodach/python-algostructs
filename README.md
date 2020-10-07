@@ -13,14 +13,12 @@ I keep learning and will be grateful for any suggestions, feel free to fork.
 
 ## Data Structures
 
-* [ ] Linked List
+* [x] Linked List
 * [ ] String Builder
 * [ ] Queue
 * [ ] Dequeue
 * [ ] Stack
 * [ ] Heap
-* [ ] Array List
-* [ ] Vector
 * [ ] Hash Table
 * [ ] Tree
 * [ ] Graph
