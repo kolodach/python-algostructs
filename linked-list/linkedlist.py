@@ -168,6 +168,32 @@ class LinkedList:
         """
         return self.tail.value if self.tail else None
 
+    def __getitem__(self, key):
+        """Retreives element at the specific position
+
+        Args:
+          key: item position
+
+        Returns:
+          element at postion
+
+        Raises:
+          IndexError: position is out of the list range.
+        """
+        if key < 0 or key >= len(self):
+            raise IndexError("key is out of range")
+        if key == 0:
+            return self.first()
+        if key == len(self) - 1:
+            return self.last()
+        node = self.head
+        index = 0
+        while node != None:
+            if index == key:
+                return node.value
+            node = node.next
+            index += 1
+
     def delete_first(self):
         """Removes first element form list
 

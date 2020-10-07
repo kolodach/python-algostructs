@@ -97,6 +97,55 @@ def test_LinkedList_lastShouldInsertLast():
     assert sut.tail.value == items[3]
     assert sut._length == 4
 
+def test_getitem_ShouldReturnFirstItem():
+    # arrange
+    sut = LinkedList()
+    sut.add_first(3)
+    sut.add_first(2)
+    sut.add_first(1)
+
+    # act
+    item = sut[0]
+
+    # assert
+    assert item == 1
+
+def test_getitem_ShouldReturnLastItem():
+    # arrange
+    sut = LinkedList()
+    sut.add_first(3)
+    sut.add_first(2)
+    sut.add_first(1)
+
+    # act
+    item = sut[2]
+
+    # assert
+    assert item == 3
+
+def test_getitem_ShouldReturnMiddleItem():
+    # arrange
+    sut = LinkedList()
+    sut.add_first(5)
+    sut.add_first(4)
+    sut.add_first(3)
+    sut.add_first(2)
+    sut.add_first(1)
+
+    # act
+    item = sut[3]
+
+    # assert
+    assert item == 4
+
+def test_getitem_ShouldRaiseIndexErrorWhinOutOfRange():
+    # arrange
+    sut = LinkedList()
+    sut.add_first(1)
+
+    # act, assert
+    with pytest.raises(IndexError):
+        sut[1]
 
 def test_add_at_ShouldInstertElementInTheMiddle():
     # arrange
