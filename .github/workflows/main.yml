@@ -19,7 +19,6 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Python Pylin GitHub Action
-        uses: fylein/python-pytest-github-action@v1
-        with:
-          args: pip3 install -r requirements.txt && pytest test/unit
+      - name: Python Pytest Github Action
+        uses: fylein/python-pytest-github-action@v2
+
