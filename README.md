@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/kolodach/python-algostructs/branch/master/graph/badge.svg)](https://codecov.io/gh/kolodach/python-algostructs)
+
 # Python Algorithms & Data Structures
 
 This repository contains my implementation of the common algorithms and data
