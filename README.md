@@ -1,5 +1,5 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![CI](https://github.com/kolodach/python-algostructs/workflows/CI/badge.svg)
+![pytest](https://github.com/kolodach/python-algostructs/workflows/CI/badge.svg)
 [![codecov](https://codecov.io/gh/kolodach/python-algostructs/branch/master/graph/badge.svg)](https://codecov.io/gh/kolodach/python-algostructs)
 # Python Algorithms & Data Structures
 
