@@ -9,7 +9,7 @@ def test_Node_shouldCreateNodeWithDefaultArgs():
 
     # assert
     assert sut.value == None
-    assert sut.next == None
+    assert sut.next == 1
 
 def test_Node_shouldCreateNodeWithActualArgs():
     # arrange
