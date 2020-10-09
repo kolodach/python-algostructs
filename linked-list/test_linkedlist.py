@@ -413,3 +413,58 @@ def test_str_ShouldPrintTheList():
 
     assert sut_str == "1 -> 2 -> 3"
 
+def test_remove_dups_ShouldRemoveDuplicates():
+    # arrange
+    sut = LinkedList()
+    sut.add_last(1)
+    sut.add_last(2)
+    sut.add_last(3)
+    sut.add_last(2)
+    sut.add_last(1)
+    sut.add_last(4)
+    sut.add_last(2)
+    sut.add_last(5)
+    sut.add_last(1)
+
+    # act
+    sut.remove_dups()
+
+    # assert
+    assert sut.head.value == 1
+    assert sut.head.next.value == 2
+    assert sut.head.next.next.value == 3
+    assert sut.head.next.next.next.value == 4
+    assert sut.head.next.next.next.next.value == 5
+    assert sut.head.next.next.next.next.next == None
+    assert sut.tail.value == 5
+    assert len(sut) == 5
+
+def test_remove_dups_ShouldNotFailOnEmptyList():
+    # arrange
+    sut = LinkedList()
+
+    # act
+    sut.remove_dups()
+
+    # assert
+    assert sut.head == None
+    assert sut.tail == None
+    assert len(sut) == 0
+
+def test_remove_dups_ShouldLeaveUnchangedIfItemsUnique():
+    # arrange
+    sut = LinkedList()
+    sut.add_last(1)
+    sut.add_last(2)
+    sut.add_last(3)
+
+    # act
+    sut.remove_dups()
+
+    # assert
+    assert sut.head.value == 1
+    assert sut.head.next.value == 2
+    assert sut.head.next.next.value == 3
+    assert sut.head.next.next.next == None
+    assert sut.tail.value == 3
+    assert len(sut) == 3

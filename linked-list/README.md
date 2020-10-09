@@ -7,7 +7,7 @@ doubly linked.
 
 | Name              | Status    |
 |-------------------|-----------|
-|Remove Dups        |TODO       |
+|Remove Dups        |DONE       |
 |Delete Middle Node |DONE       |
 |Partition          |TODO       |
 |Sum Lists          |TODO       |

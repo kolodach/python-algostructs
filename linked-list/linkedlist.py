@@ -266,3 +266,20 @@ class LinkedList:
                 return value
             node = node.next
             index += 1
+
+    def remove_dups(self):
+        """Removes duplicates from list
+        """
+        if len(self) == 0:
+            return
+        node = self.head
+        while node != None:
+            next_node = node
+            while next_node != None:
+                if next_node.next != None and node.value == next_node.next.value:
+                    next_node.next = next_node.next.next
+                    self._length -= 1
+                    if next_node.next == None:
+                        self.tail = next_node
+                next_node = next_node.next
+            node = node.next
