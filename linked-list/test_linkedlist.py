@@ -424,6 +424,7 @@ def test_remove_dups_ShouldRemoveDuplicates():
     sut.add_last(4)
     sut.add_last(2)
     sut.add_last(5)
+    sut.add_last(1)
 
     # act
     sut.remove_dups()
