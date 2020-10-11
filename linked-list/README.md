@@ -11,7 +11,7 @@ doubly linked.
 |Delete Middle Node |DONE       |
 |Partition          |TODO       |
 |Sum Lists          |DONE       |
-|Palindrome         |TODO       |
+|Palindrome         |DONE       |
 |Intersection       |TODO       |
 |Loop Detection     |TODO       |
 
