@@ -10,7 +10,7 @@ doubly linked.
 |Remove Dups        |DONE       |
 |Delete Middle Node |DONE       |
 |Partition          |TODO       |
-|Sum Lists          |TODO       |
+|Sum Lists          |DONE       |
 |Palindrome         |TODO       |
 |Intersection       |TODO       |
 |Loop Detection     |TODO       |
